@@ -28,19 +28,19 @@ and open the template in the editor.
                 <div class="registro">
                     <img  class="img-responsive logo-registro" src="img/logousuario.png" width="100" height="100">
                 </div>
-                <form>
+                <form class="my-5">
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
-                                <input type="text" class="form-control" id="nombre"  placeholder="Ingrese su Nombre">
+                                <input type="text" class="form-control" id="nombre"  placeholder="Ingrese su Nombre"name="nombre">
                                 <small id="nombreHelp" class="form-text text-muted">Sus datos nunca seran compartidos.</small>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label for="apellido">Apellidos</label>
-                                <input type="text" class="form-control" id="apellido" placeholder="Ingrese sus apellidos">
+                                <input type="text" class="form-control" id="apellido" placeholder="Ingrese sus apellidos" name="apellido">
                             </div>
                         </div>
                     </div>
@@ -48,36 +48,36 @@ and open the template in the editor.
                        <div class="col">
                            <div class="form-group">
                                <label for="pais">Pais</label>
-                               <select class="form-control" id="pais">
-                                 <option>Colombia</option>
-                                 <option>Venezuela</option>
-                                 <option>Jamaica</option>
-                                 <option>Uruguay</option>
-                                 <option>Brasil</option>
+                               <select class="form-control" id="pais" name="pais">
+                                   <option value="colombia">Colombia</option>
+                                   <option value="argentina">Argentina</option>
+                                   <option value="peru">Peru</option>
+                                   <option value="uruguay">Uruguay</option>
+                                   <option value="brasil">Brasil</option>
                                </select>
                            </div>
                        </div>
                        <div class="col">
                            <div class="form-group">
                                <label for="departamento">Departamento</label>
-                               <select class="form-control" id="departamento">
-                                 <option>Antioquia</option>
-                                 <option>Cundinamarca</option>
-                                 <option>Nariño</option>
-                                 <option>Amazonas</option>
-                                 <option>Atlantico</option>
+                               <select class="form-control" id="departamento" name="departamento">
+                                   <option value="antioquia">Antioquia</option>
+                                   <option value="cundinamarca">Cundinamarca</option>
+                                   <option value="nariño">Nariño</option>
+                                   <option value="amazonas">Amazonas</option>
+                                   <option value="atlantico">Atlantico</option>
                                </select>
                            </div>
                        </div>
                        <div class="col">
                            <div class="form-group">
                                <label for="ciudad">Ciudad</label>
-                               <select class="form-control" id="ciudad">
-                                 <option>Medellin</option>
-                                 <option>Brabosa</option>
-                                 <option>Copacabana</option>
-                                 <option>Envigado</option>
-                                 <option>Sabaneta</option>
+                               <select class="form-control" id="ciudad" name="ciudad">
+                                   <option value="medellin">Medellin</option>
+                                   <option value="caldas">Caldas</option>
+                                   <option value="copacabana">Copacabana</option>
+                                   <option value="envigado">Envigado</option>
+                                   <option value="bello">Bello</option>
                                </select>
                            </div>
                        </div>
@@ -86,16 +86,16 @@ and open the template in the editor.
                          <div class="row">
                              <div class="col">
                                 <label for="telefono">Telefono</label>
-                                <input type="text" class="form-control" id="telefono"  placeholder="Telefono"> 
+                                <input type="text" class="form-control" id="telefono"  placeholder="Telefono" name="telefono"> 
                              </div>
                              <div class="col">
                                 <label for="email">E-mail</label>
-                                <input type="email" class="form-control" id="email"  placeholder="E-mail"> 
+                                <input type="email" class="form-control" id="email"  placeholder="E-mail" name="email"> 
                              </div>
                          </div>
                      </div>   
                     <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="terminos">
+                        <input type="checkbox" class="form-check-input" id="terminos" name="terminos">
                       <label class="form-check-label" for="exampleCheck1">Acepta Terminos y Condiciones</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-enviar">Completar Registro</button>

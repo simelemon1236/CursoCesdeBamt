@@ -22,6 +22,7 @@ and open the template in the editor.
 }
 .contenedor{
     margin-top: 20px;
+    width: 50%;
 }
 .logo-registro{
     box-shadow: 5px 5px #BDBDBD;
